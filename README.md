@@ -3,7 +3,9 @@ Violência contra a mulher no Estado de São Paulo Mapa de calor por bairro · v
 ESPECIFICAÇÕES SOBRE O MAPA DA VIOLÊNCIA CONTRA A MULHER NO ESTADO DE SÃO PAULO
 
 !!!!!IMPORTANTE!!!!!!!!
+
 ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM AUTORIZAÇÃO PRÉVIA
+
 Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma base cartográfica contratada especificamente para aplicações profissionais e empresariais.
 ________________________________________
 
