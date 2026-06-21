@@ -7,9 +7,9 @@ ESPECIFICAÇÕES SOBRE O MAPA DA VIOLÊNCIA CONTRA A MULHER NO ESTADO DE SÃO PA
 ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM AUTORIZAÇÃO PRÉVIA
 
 Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma base cartográfica contratada especificamente para aplicações profissionais e empresariais.
-________________________________________
 
 Veículos de imprensa, organizações e instituições interessadas em licenciamento, parcerias ou acesso antecipado podem entrar em contato diretamente com o autor.
+________________________________________
 
 Produtos: mapa de calor interativo + infográfico editorial (HTML autossuficientes) 
 
