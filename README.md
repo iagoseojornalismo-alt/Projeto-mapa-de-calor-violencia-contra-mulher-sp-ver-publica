@@ -42,9 +42,13 @@ Total de feminicídio (consumados + tentativas)	1.415
 Com relação ao ponto metodológico central, a Base 2 foi extraída por data de registro. No entanto, segundo notas metodológicas da SSP, o fato pode ter ocorrido muito antes — o cidadão pode registrar a qualquer momento, o que colocou os dados diante de algumas nuances temporais anacrônicas. Na tabela abaixo distinguimos a data da ocorrência em algumas linhas.
 
 Ano	Data de registro (critério SSP)	Data de comunicação	Data de ocorrência (fato)
+
 2005–2023	0	1	1.187
+
 2024	0	67	3.554
+
 2025	194.753	194.797	193.986
+
 2026	75.542	75.430	71.568
 
 Pela data de registro das ocorrências (o critério oficial), a base é estritamente 2025–2026 — não há registros anteriores. Contudo, os ~4.741 fatos com data de ocorrência anterior a 2025 (sendo 1.187 antes de 2024 e 3.554 em 2024) são fatos antigos comunicados recentemente, não registros de anos passados.
@@ -57,33 +61,53 @@ A diferença é explicada em nota de rodapé no mapa. A data fim exibida foi cor
 5. Geocodificação e cobertura
 
 Nos microdados, apenas ~29% (Base 1) e ~29% (Base 2) das ocorrências tinham coordenada própria. A cobertura foi reconstruída em duas frentes:
+
 •	Centroides reais de bairro preservados quando existentes.
+
 •	Geocodificação por nome de bairro via Nominatim (OpenStreetMap), rodada localmente com cache resumível, controle de taxa e normalização de nomes (expansão de abreviações como JD→JARDIM, VL→VILA; remoção de acentos para casar bairros sem coordenada com gêmeos geolocalizados).
 
 Resultado da cobertura:
 Métrica	Valor
+
 Bairros distintos geolocalizados	24.011 em 645 municípios
+
 Ocorrências com bairro geolocalizado (pct_geo)	92,2%
+
 Ocorrências exibidas no mapa (pct_mapa)	100%
 
 A base do mapa tem duas listas de pontos: bairros (24.011 pontos geolocalizados, ~249.187 casos de VD ≈ 92,2%) e cidades_ng (623 pontos no centro do município, para bairros não geocodificados, ~20.993 casos ≈ 7,8%, marcados como posição aproximada na nota).
 
 6. O que representa a "zona rural"
 Cerca de 2,3% dos registros de violência doméstica (6.210) e 2,6% dos de feminicídio (37) têm o campo de bairro preenchido apenas como genérico — "RURAL", "ÁREA RURAL" ou "ZONA RURAL". Não há bairro específico: o endereço foi registrado apenas como a zona rural do município, e o histórico (que poderia conter o logradouro) é suprimido pela SSP por força do art. 31 da LAI.
-No conjunto geolocalizado, esses casos haviam se empilhado em 242 pontos únicos, criando hotspots artificiais (como por exemplo em Franca 1.176, Carapicuíba 901, S. J. do Rio Preto 862) que apareciam entre os bairros mais violentos — o que era enganoso. Para contornar essa falha, foi feito um tratamento aplicado com dot density, onde cada ponto rural foi distribuído pela zona rural do respectivo município (polígono do IBGE embutido no mapa, casado por geometria, não por nome). Os 242 pontos viraram 2.664 pontos dispersos pelas áreas periféricas da cidade, em zonas rurais, e o maior aglomerado num único ponto caiu de 1.176 → 15 casos. Esses casos foram retirados do ranking de bairros (Itaquera assumiu o 4º lugar) e a nota do mapa explica a aproximação. Os totais foram preservados exatamente (5.625 VD / 9 fe / 22 te apenas redistribuídos). Vale ressaltar que a localização para casos em áreas rurais são uma aproximação honesta de dado de área — não localização exata.
 
-7. Perfil das vítimas e das ocorrências (infográfico)
+No conjunto geolocalizado, esses casos haviam se empilhado em 242 pontos únicos, criando hotspots artificiais (como por exemplo em Franca 1.176, Carapicuíba 901, S. J. do Rio Preto 862) que apareciam entre os bairros mais violentos — o que era enganoso.
+
+Para contornar essa falha, foi feito um tratamento aplicado com dot density, onde cada ponto rural foi distribuído pela zona rural do respectivo município (polígono do IBGE embutido no mapa, casado por geometria, não por nome). 
+
+Os 242 pontos viraram 2.664 pontos dispersos pelas áreas periféricas da cidade, em zonas rurais, e o maior aglomerado num único ponto caiu de 1.176 → 15 casos. Esses casos foram retirados do ranking de bairros (Itaquera assumiu o 4º lugar) e a nota do mapa explica a aproximação. Os totais foram preservados exatamente (5.625 VD / 9 fe / 22 te apenas redistribuídos). 
+
+Vale ressaltar que a localização para casos em áreas rurais são uma aproximação honesta de dado de área — não localização exata.
+
+8. Perfil das vítimas e das ocorrências (infográfico)
 Com base na mesma planilha, o código explorou um infográfico que foi embutido ao mapa, trazendo o perfil das vítimas das ocorrências fundamentadas nos levantamentos acima, variando por:
 Faixa etária — vítimas de feminicídio/tentativa, Base 1, n = 1.406 com idade válida:
 
  Faixa	Casos
+ 
 Menor de 18	50
+
 18–25	232
+
 26–30	208
+
 31–40	440
+
 41–50	293
+
 51–60	111
+
 61+	72
+
 
 Cor/raça — Base 1, n = 1.415: Branca 655 (46,3%) · Parda 600 (42,4%) · Preta 122 (8,6%) · Amarela 1 (0,1%) · Ignorada 37 (2,6%).
 
@@ -118,20 +142,34 @@ Autossuficiência e validação: cada peça é um HTML único, sem dependências
 
 •	Classificação do feminicídio. A Base 1 segue o detalhamento da SSP (feminicídio/tentado dentro de homicídio doloso); o campo de rubrica é heterogêneo (≈936 como "Feminicídio" e ≈476 como "Homicídio art. 121"), o que convém ter em conta ao citar as contagens.
 
-A planilha tem ~270 mil linhas de violência doméstica (cada linha = uma vítima/ocorrência, com 47 colunas) mais 1.415 de feminicídio. Embutir isso cru num HTML seria inviável (dezenas de MB e travaria o navegador). Então a condensação é, essencialmente, um "group by": agrupar as linhas por (município, bairro) e contar quantas caem em cada categoria.
-Na prática, o pipeline faz isto:
+A planilha tem ~270 mil linhas de violência doméstica (cada linha = uma vítima/ocorrência, com 47 colunas) mais 1.415 de feminicídio. Embutir isso cru num HTML seria inviável (dezenas de MB e travaria o navegador). Então a condensação é, essencialmente, um "group by": 
+
+agrupar as linhas por (município, bairro) e contar quantas caem em cada categoria.
+
+Na prática, o pipeline faz:
+
 1. Leitura em fluxo. A planilha (~69 MB) é lida em modo read only, linha a linha (openpyxl, iter_rows), sem carregar tudo na memória. Cada linha é classificada na categoria certa pelo campo de status: violência doméstica (Base 2), feminicídio consumado ou tentativa (Base 1, pelo flag C/T).
+
 2. Agregação por bairro. Para cada linha, soma se 1 num contador da chave (cidade, bairro). Ao fim, milhares de linhas de um mesmo bairro viram uma única entrada com contagens. Por exemplo, todas as ocorrências do Grajau colapsam em:
+   
 {"c":"S.PAULO","b":"GRAJAU","lat":-23.78,"lng":-46.70,"vd":1416,"fe":3,"te":4}
+
 É aí que mora a compressão: ~270 mil linhas × 47 colunas → ~24 mil entradas com 7 campos cada.
-3. Uma coordenada por bairro. Cada grupo recebe um par lat/lng — o centroide das ocorrências daquele bairro que já tinham coordenada, ou, quando não havia, a coordenada do nome do bairro vinda da geocodificação (Nominatim, com cache). Isso transforma cada agregado num ponto.
-4. Separação em duas listas. Os grupos com bairro geolocalizado vão para bairros (24.011 pontos ≈ 92,2% dos casos). Os bairros que não geocodificaram são somados no centro do município e vão para cidades_ng (623 pontos ≈ 7,8%), cada um guardando quantos bairros agregou (nb).
-5. Pré cálculo do que a tela precisa. O ranking dos 15 maiores (top) e os totais/percentuais/datas (meta) já são calculados no build e gravados prontos, para a página não ter que recomputar nada.
+
+4. Uma coordenada por bairro. Cada grupo recebe um par lat/lng — o centroide das ocorrências daquele bairro que já tinham coordenada, ou, quando não havia, a coordenada do nome do bairro vinda da geocodificação (Nominatim, com cache). Isso transforma cada agregado num ponto.
+
+5. Separação em duas listas. Os grupos com bairro geolocalizado vão para bairros (24.011 pontos ≈ 92,2% dos casos). Os bairros que não geocodificaram são somados no centro do município e vão para cidades_ng (623 pontos ≈ 7,8%), cada um guardando quantos bairros agregou (nb).
+ 
+6. Pré cálculo do que a tela precisa. O ranking dos 15 maiores (top) e os totais/percentuais/datas (meta) já são calculados no build e gravados prontos, para a página não ter que recomputar nada.
 Tudo isso é serializado como JSON compacto e colado dentro do HTML (window.__DADOS__).
+
 Por que isso funciona no mapa de calor: cada ponto carrega um peso = número de casos. O Leaflet.heat soma os pesos por região, então 24 mil pontos ponderados reproduzem a densidade de 270 mil ocorrências — com o arquivo ficando em ~3,3 MB e renderizando offline.
 Dois detalhes do mesmo princípio:
+
 •	Zona rural (dispersão): o espalhamento que fizemos atua sobre os agregados já prontos, não sobre as linhas cruas — pega as 242 entradas rurais e redistribui a contagem de cada uma em vários pontos dentro do polígono do município, mantendo as somas idênticas.
+
 •	Infográfico: mesma lógica, agregações ainda menores. Cada gráfico é só um vetorzinho de totais (faixa etária = 7 números, local = 9, meses = 16×2, horário = 24, cor/raça = 5, etc.), apurados num contador único sobre as bases e gravados como um objeto D minúsculo.
+
 Resumindo: a "condensação" é agregar por bairro + uma coordenada por bairro + contagens por categoria, preservando exatamente os totais (270.295 / 374 / 1.041) — o mapa nunca precisa dos registros individuais, só das contagens georreferenciadas. 
 
 ________________________________________
