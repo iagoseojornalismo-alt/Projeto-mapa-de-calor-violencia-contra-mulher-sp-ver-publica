@@ -1,6 +1,4 @@
 # Mapa-de-calor-violencia-contra-mulher-sp-vPublica
-Violência contra a mulher no Estado de São Paulo Mapa de calor por bairro · violência doméstica, feminicídio e tentativa de feminicídio
-ESPECIFICAÇÕES SOBRE O MAPA DA VIOLÊNCIA CONTRA A MULHER NO ESTADO DE SÃO PAULO
 
 !!!!!IMPORTANTE!!!!!!!!
 
@@ -10,6 +8,7 @@ Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma
 
 Veículos de imprensa, organizações e instituições interessadas em licenciamento, parcerias ou acesso antecipado podem entrar em contato diretamente com o autor.
 ________________________________________
+ESPECIFICAÇÕES SOBRE O MAPA DA VIOLÊNCIA CONTRA A MULHER NO ESTADO DE SÃO PAULO
 
 Produtos: mapa de calor interativo + infográfico editorial (HTML autossuficientes) 
 
