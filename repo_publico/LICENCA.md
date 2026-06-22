@@ -1,0 +1,32 @@
+# Licença e termos de uso — versão de utilidade pública
+
+Esta é a versão **gratuita e de utilidade pública** do projeto. Os termos abaixo se aplicam especificamente a ela.
+
+## Resumo
+
+✅ **Permitido, livremente, sem pedir autorização:**
+- Consultar, navegar e usar o mapa.
+- Compartilhar o link.
+- Referenciar/citar em reportagens, trabalhos acadêmicos, pesquisas, redes sociais e outros usos **não comerciais**, com crédito ao autor.
+- Incorporar via iframe em projetos de utilidade pública, organizações sem fins lucrativos, órgãos públicos e iniciativas educacionais/acadêmicas.
+
+🚫 **Não permitido sem autorização prévia:**
+- Uso comercial — incluindo incorporação por **veículos de imprensa** ou qualquer outra organização com fins lucrativos, ainda que o conteúdo em si não seja vendido diretamente.
+- Redistribuição do arquivo HTML (ou de partes dele) para fins comerciais.
+- Remoção do crédito autoral.
+
+## Por que essa restrição
+
+O mapa-base (tiles) desta versão usa o serviço **CARTO Basemaps**, cujo uso gratuito é licenciado **apenas para fins não comerciais** (ver [docs.carto.com/faqs/carto-basemaps](https://docs.carto.com/faqs/carto-basemaps)). Usar esta versão especificamente para fins comerciais violaria os termos do provedor de mapas, não apenas os do autor.
+
+## Quero usar comercialmente (ex.: sou um veículo de imprensa)
+
+Está sendo preparada uma **versão com licenciamento comercial** (mapa-base contratado especificamente para esse fim), oferecida diretamente aos veículos interessados. Entre em contato com o autor para acesso antecipado ou parceria.
+
+## Crédito
+
+```
+Mapa: Iago Yoshimi A. Seo. Dados: SSP-SP, via Lei de Acesso à Informação.
+```
+
+Jornalista: **Iago Yoshimi A. Seo** · © 2026.
