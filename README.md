@@ -1,12 +1,15 @@
 # Mapa-de-calor-violencia-contra-mulher-sp-vPublica
 
-!!!!!IMPORTANTE!!!!!!!!
+_!!!!!IMPORTANTE!!!!!!!!_
 
-ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM AUTORIZAÇÃO PRÉVIA
+_ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM AUTORIZAÇÃO PRÉVIA_
 
-Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma base cartográfica contratada especificamente para aplicações profissionais e empresariais.
+_Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma base cartográfica contratada especificamente para aplicações profissionais e empresariais._
 
-Veículos de imprensa, organizações e instituições interessadas em licenciamento, parcerias ou acesso antecipado podem entrar em contato diretamente com o autor.
+_Veículos de imprensa, organizações e instituições interessadas em licenciamento, parcerias ou acesso antecipado podem entrar em contato diretamente comigo. Estou à disposição pelo e-mail: iagoseojornalismo@gmail.com_
+
+_Atenciosamente,_
+_Iago Y. Seo_
 ________________________________________
 ESPECIFICAÇÕES SOBRE O MAPA DA VIOLÊNCIA CONTRA A MULHER NO ESTADO DE SÃO PAULO
 
