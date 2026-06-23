@@ -6,7 +6,7 @@ _ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM A
 
 _Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma base cartográfica contratada especificamente para aplicações profissionais e empresariais._
 
-_Veículos de imprensa, organizações e instituições interessadas em licenciamento, parcerias ou acesso antecipado podem entrar em contato diretamente comigo. Estou à disposição pelo e-mail: iagoseojornalismo@gmail.com_
+_Veículos de imprensa por assinatura, organizações e instituições interessadas em licenciamento, parcerias ou acesso antecipado podem entrar em contato diretamente comigo. Estou à disposição pelo e-mail: iagoseojornalismo@gmail.com_
 
 _Atenciosamente,_
 _Iago Y. Seo_
