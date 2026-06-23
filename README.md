@@ -16,6 +16,9 @@ ESPECIFICAÇÕES SOBRE O MAPA DA VIOLÊNCIA CONTRA A MULHER NO ESTADO DE SÃO PA
 Produtos: mapa de calor interativo + infográfico editorial (HTML autossuficientes) 
 
 Fonte: Secretaria da Segurança Pública de São Paulo (SSP SP), pedido FALASP via Lei de Acesso à Informação / Recorte: 01/01/2025 a 30/04/2026 / Jornalista: Iago Yoshimi A. Seo · © 2026
+
+*OBS: CASO HAJA O  INTERESSE PELAS PLANILHAS DE DADOS, FAVOR ENTRAR EM CONTATO NO E-MAIL: iagoseojornalismo@gmail.com*
+Devido ao tamanho do arquivo, não foi possível agregar ao repositório.
 ________________________________________
 1. Visão geral
 O projeto transforma os microdados brutos da SSP SP em duas peças de leitura pública, ambas em arquivo HTML único e offline (sem conexão a banco externo em tempo de execução):
