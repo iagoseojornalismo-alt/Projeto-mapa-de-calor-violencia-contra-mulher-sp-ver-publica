@@ -2,7 +2,7 @@
 
 _!!!!!IMPORTANTE!!!!!!!!_
 
-_ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM AUTORIZAÇÃO PRÉVIA_
+_ESTÁ VETADO O USO COMERCIAL DESSE MAPA, BEM COMO INCORPORAÇÕES DO HTML SEM AUTORIZAÇÃO PRÉVIA EM CANAIS QUE NECESSITAM DE TRANSAÇÃO FINANCEIRA PARA SER ACESSADO_
 
 _Uma versão com licenciamento comercial está em desenvolvimento, utilizando uma base cartográfica contratada especificamente para aplicações profissionais e empresariais._
 
